@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,9 @@ public class AboutDetailActivity extends AppCompatActivity {
 
         MusicImage= (ImageView)findViewById(R.id.ivImage2);
         MusicDescription=(TextView)findViewById(R.id.txtDescription);
+        MusicDescription.setMovementMethod(new ScrollingMovementMethod());
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Bundle mBundle = getIntent().getExtras();
         if (mBundle!=null){
