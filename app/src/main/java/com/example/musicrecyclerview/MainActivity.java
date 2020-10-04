@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         MusicList.add(musicData);
 
         musicData= new MusicData("Joji\nAlternative/Lofi R&B & Pop","Joji is one of the most enthralling artists of the digital age. New album Nectar arrives as an eagerly anticipated follow-up to Joji’s RIAA Gold-certified first full-length album BALLADS 1, which topped the Billboard R&B / Hip-Hop Charts and has amassed 3.6B+ streams to date. The “first music superstar of his kind” (Office), Joji is back with a cinematic and contemplative follow-up that he describes as having “a sense of urgency but calm.” Across its expansive universe of visuals and music, Nectar explores what every living being is innately drawn to and the ends they’ll go to reach it. The album lives in the in-between space where genres melt into each other. Executive produced and arranged by Joji, Nectar is his most ambitious project to date and an album that “far exceeds anything else we’ve heard thus far” (NYLON).",R.drawable.joji);
+        MusicList.add(musicData);
 
 
         Adapter adapter= new Adapter(MainActivity.this,MusicList);
